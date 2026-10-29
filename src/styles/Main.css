@@ -3,10 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
-
-main > * {
-    outline: 1px solid blue;
+    /* border: 1px solid purple; */
 }
 
 main h3 {
@@ -15,17 +12,48 @@ main h3 {
     font-size: 1.25rem;
 }
 
-
 .info-and-scores {
   display: flex;
   justify-content: space-between;
 }
 
-.info-and-scores > div {
+.scores {
     display: flex;
     gap: 32px;
 }
 
+.scores > h3 {
+    white-space: nowrap;
+}
+
 .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+    gap: 32px;
+    /* outline: 1px solid orange; */
+}
+
+.card {
     border: 4px solid var(--red-color, red);
+    border-radius: 8px;
+    min-height: 160px;
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .info-and-scores h3 {
+        font-size: 1rem;
+    }
+
+    .scores {
+        flex-direction: column;
+        gap: 16px;
+    }
 }

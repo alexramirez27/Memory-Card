@@ -184,7 +184,6 @@
 } */
 
 #root {
-  /* outline: 1px solid orange; */
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
   min-height: 100vh;

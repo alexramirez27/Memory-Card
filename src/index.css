@@ -134,4 +134,5 @@ body {
   margin: 0;
   font-family: var(--font-main);
   background-color: var(--bg);
+  /* min-width: 320px; */
 }

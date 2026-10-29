@@ -2,8 +2,12 @@ header {
   padding: 32px;
   display: flex;
   justify-content: space-between;
-  /* outline: 1px solid red; */
+  align-items: center;
 }
+
+/* header > * {
+  outline: 1px solid orange;
+} */
 
 header > button {
   background-color: var(--bg);
