@@ -3,10 +3,9 @@ main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    /* border: 1px solid purple; */
 }
 
-main h3 {
+.info-and-scores h3 {
     margin: 0;
     color: var(--red-color, red);
     font-size: 1.25rem;
@@ -15,6 +14,10 @@ main h3 {
 .info-and-scores {
   display: flex;
   justify-content: space-between;
+  gap: 16px;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg);
 }
 
 .scores {
@@ -30,13 +33,6 @@ main h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
     gap: 32px;
-    /* outline: 1px solid orange; */
-}
-
-.card {
-    border: 4px solid var(--red-color, red);
-    border-radius: 8px;
-    min-height: 160px;
 }
 
 .main-content {
@@ -55,5 +51,9 @@ main h3 {
     .scores {
         flex-direction: column;
         gap: 16px;
+    }
+
+    main {
+        padding: 0 16px 16px;
     }
 }

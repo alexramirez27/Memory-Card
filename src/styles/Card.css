@@ -1,0 +1,38 @@
+.card {
+    padding: 4px;
+    background-color: var(--red-color);
+    border-radius: 8px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: none;
+}
+
+.card:hover {
+    cursor: pointer;
+    box-shadow: 
+        -4px -4px 12px 2px rgba(217, 75, 78, 0.25), /* Top left */
+        4px -4px 12px 2px rgba(217, 75, 78, 0.25),  /* Top right */
+        -4px 4px 12px 2px rgba(217, 75, 78, 0.25),  /* Bottom right */
+        4px 4px 12px 2px rgba(217, 75, 78, 0.25);   /* Bottom right */
+}
+
+.card > img {
+    min-height: 124px;
+    background-color: var(--bg);
+    border-radius: 6px 6px 0 0;
+}
+
+.card > h3 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125rem;
+    background-color: var(--text);
+    color: var(--bg);
+    height: 100%;
+    border-top: 4px solid var(--red-color);
+    border-radius: 0 0 6px 6px;
+}

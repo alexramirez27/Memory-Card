@@ -5,10 +5,6 @@ header {
   align-items: center;
 }
 
-/* header > * {
-  outline: 1px solid orange;
-} */
-
 header > button {
   background-color: var(--bg);
   border: none;
@@ -27,4 +23,11 @@ header > h1 {
 header > h1:hover,
 header > button:hover {
   cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    header {
+      padding: 16px;
+    }
 }
